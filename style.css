@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Inter-regular";
+  src: url(assets/fonts/static/Inter-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Inter-semibold";
+  src: url(assets/fonts/static/Inter-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "Inter-bold";
+  src: url(assets/fonts/static/Inter-Bold.ttf);
+}
+
+:root {
+  --primary-bkgDark: rgba(20, 20, 20, 255);
+  --secondary-bkgDark: #1f1f1f;
+  --third-bkgDark: #333333;
+  --white-primary: #ffffff;
+  --third-color: #d0eb7b;
+  font-size: 16px;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-bkgDark);
+  color: var(--white-primary);
+  font-family: "Inter-regular", cursive;
+}
+
+.flex {
+  display: flex;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.noList {
+  list-style-type: none;
+}
+
+.mainContainer {
+  width: 100%;
+  padding: 1rem;
+  margin: 1%;
+  align-items: center;
+  justify-content: center;
+}
+
+.profileContainer {
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background-color: var(--secondary-bkgDark);
+  align-items: center;
+  text-align: center;
+  row-gap: 1rem;
+}
+
+.picSection {
+  background-color: var(--third-bkgDark);
+  aspect-ratio: 1 / 1;
+  width: 82px;
+  height: auto;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.profileImg {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.headingSection {
+  width: 100%;
+  row-gap: 0.5rem;
+}
+
+.mainTitle {
+  font-size: 1.5rem;
+  font-family: "Inter-semibold", sans-serif;
+}
+
+.subTitle {
+  font-size: 0.85rem;
+  color: var(--third-color);
+  font-family: "Inter-semibold", sans-serif;
+}
+
+.profileBio {
+  color: var(--third-bkgDark);
+  color: #848484;
+  padding: 1rem 0rem;
+}
+
+.profileList {
+  row-gap: 1rem;
+}
+
+.linkSocials {
+  width: 325px;
+  padding: 0.95rem;
+  border-radius: 0.5rem;
+  align-items: center;
+  text-align: center;
+  background-color: var(--third-bkgDark);
+  color: inherit;
+  text-decoration: none;
+  font-family: "Inter-bold", sans-serif;
+}
+
+a:visited,
+a:hover,
+a:focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+.linkSocials:hover,
+.linkSocials:focus {
+  background-color: var(--third-color);
+  color: var(--secondary-bkgDark);
+}
