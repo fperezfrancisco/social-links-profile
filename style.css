@@ -33,6 +33,7 @@ body {
   height: 100%;
   background-color: var(--primary-bkgDark);
   background-color: pink;
+  background-color: aquamarine;
   color: var(--white-primary);
   font-family: "Inter-regular", cursive;
 }
