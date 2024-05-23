@@ -31,9 +31,12 @@
 body {
   width: 100%;
   height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: var(--primary-bkgDark);
-  background-color: pink;
-  background-color: aquamarine;
   color: var(--white-primary);
   font-family: "Inter-regular", cursive;
 }
